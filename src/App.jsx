@@ -35,6 +35,10 @@ function App() {
     setCartItems(prev => prev.filter(item => item.id !== id))
   }
 
+  const handleClearCart = () => {
+    setCartItems([])
+  }
+
   const totalCartItems = cartItems.reduce((sum, item) => sum + item.qty, 0)
 
   return (
@@ -58,6 +62,7 @@ function App() {
           onClose={() => setIsCartOpen(false)}
           onUpdateQty={handleUpdateQty}
           onRemove={handleRemoveItem}
+          onClearCart={handleClearCart}
         />
       )}
     </div>
