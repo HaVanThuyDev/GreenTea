@@ -37,7 +37,7 @@ export default function Cart({ items, onClose, onUpdateQty, onRemove, onClearCar
           <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
             <div className="flex items-center gap-2">
               <ShoppingCart className="w-5 h-5 text-brand-primary" />
-              <span className="font-bold text-gray-900">Your Cart</span>
+              <span className="font-bold text-gray-900">Giỏ Hàng</span>
               <span className="w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center text-white"
                 style={{ background: 'linear-gradient(135deg,#0f9d58,#34c759)' }}>
                 {itemCount}
@@ -53,8 +53,8 @@ export default function Cart({ items, onClose, onUpdateQty, onRemove, onClearCar
             {items.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center text-gray-400">
                 <ShoppingCart className="w-16 h-16 mb-4 opacity-20" />
-                <p className="text-lg font-medium">Your cart is empty</p>
-                <p className="text-sm mt-1">Add some delicious drinks!</p>
+                <p className="text-lg font-medium">Giỏ hàng trống</p>
+                <p className="text-sm mt-1">Thêm thức uống ngon vào đây!</p>
               </div>
             ) : (
               <div className="space-y-4">
@@ -99,11 +99,11 @@ export default function Cart({ items, onClose, onUpdateQty, onRemove, onClearCar
           {items.length > 0 && (
             <div className="border-t border-gray-100 px-6 py-6 space-y-4">
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">Delivery</span>
-                <span className="text-green-500 font-semibold">FREE</span>
+                <span className="text-gray-600">Giao hàng</span>
+                <span className="text-green-500 font-semibold">MIỄN PHÍ</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-lg font-bold text-gray-900">Total</span>
+                <span className="text-lg font-bold text-gray-900">Tổng Cộng</span>
                 <div className="text-right">
                   <span className="text-xl font-black text-brand-primary">${total.toFixed(2)}</span>
                   <p className="text-xs text-gray-400">{totalVND.toLocaleString('vi-VN')}₫</p>

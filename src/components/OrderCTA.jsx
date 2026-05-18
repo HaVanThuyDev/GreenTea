@@ -38,18 +38,18 @@ export default function OrderCTA() {
           transition={{ duration: 0.7 }}
         >
           <div className="inline-block px-4 py-1 rounded-full text-sm font-medium text-green-200 mb-6 glass">
-            🍃 Limited Time — Free Delivery Today Only
+            🍃 Ưu Đãi Có Hạn — Miễn Phí Giao Hàng Hôm Nay
           </div>
 
           <h2 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
-            Ready for Your
+            Sẵn Sàng Cho
             <br />
-            <span className="gradient-text-gold">Perfect Cup?</span>
+            <span className="gradient-text-gold">Ly Trà Hoàn Hảo?</span>
           </h2>
 
           <p className="text-xl text-white/80 mb-12 leading-relaxed">
-            Join over 10,000 tea lovers who start their day with Green Tea.
-            Order now and experience premium freshness delivered to your door.
+            Tham gia cùng hơn 10.000 người yêu trà bắt đầu ngày mới với Green Tea.
+            Đặt ngay và trải nghiệm hương vị cao cấp được giao tận cửa nhà bạn.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -60,21 +60,22 @@ export default function OrderCTA() {
               className="ripple-effect px-12 py-5 rounded-full font-black text-xl text-gray-900"
               style={{ background: 'linear-gradient(135deg,#f5c842,#fde68a)' }}
             >
-              Order Now ✨
+              Đặt Ngay ✨
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
+              onClick={scrollToMenu}
               className="px-12 py-5 rounded-full font-bold text-xl text-white"
               style={{ border: '2px solid rgba(255,255,255,0.5)' }}
             >
-              View Menu
+              Xem Thực Đơn
             </motion.button>
           </div>
 
           {/* Trust badges */}
           <div className="flex flex-wrap justify-center gap-6 text-white/70 text-sm">
-            {['✓ Free delivery on first order', '✓ 30-min guarantee', '✓ 100% organic'].map((b) => (
+            {['✓ Miễn phí giao hàng đơn đầu tiên', '✓ Đảm bảo giao trong 30 phút', '✓ 100% nguyên liệu hữu cơ'].map((b) => (
               <span key={b} className="font-medium">{b}</span>
             ))}
           </div>

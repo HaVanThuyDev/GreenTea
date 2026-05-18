@@ -4,28 +4,28 @@ import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    id: 1, name: 'Linh Nguyen', role: 'Food Blogger · @linhsips',
+    id: 1, name: 'Nguyễn Linh', role: 'Blogger Ẩm Thực · @linhsips',
     avatar: 'https://i.pravatar.cc/100?img=47',
-    stars: 5, date: 'May 2025',
-    text: `"Green Tea completely ruined every other milk tea for me. The matcha latte is so velvety and rich — you can taste the quality in every sip. I've been coming back every single day for three months!"`,
+    stars: 5, date: 'Tháng 5/2025',
+    text: `"Green Tea đã khiến tôi không thể uống trà sữa ở nơi nào khác nữa. Matcha Latte mịn màng và đậm đà đến mức bạn cảm nhận được chất lượng trong từng ngụm. Tôi đã quay lại mỗi ngày suốt ba tháng!"`,
   },
   {
-    id: 2, name: 'Minh Tran', role: 'Software Engineer',
+    id: 2, name: 'Trần Minh', role: 'Lập Trình Viên',
     avatar: 'https://i.pravatar.cc/100?img=12',
-    stars: 5, date: 'April 2025',
-    text: `"I'm obsessed with the Taro Dream Boba. The pearls are always perfectly chewy and the flavor is so authentic — not too sweet, not too bland. Green Tea has genuinely raised the bar for the whole industry."`,
+    stars: 5, date: 'Tháng 4/2025',
+    text: `"Tôi nghiện Trà Sữa Khoai Môn Boba mất rồi. Trân châu lúc nào cũng dai ngon hoàn hảo, hương vị chuẩn đến từng chút — không quá ngọt, không nhạt. Green Tea thật sự nâng tầm cả ngành trà sữa."`,
   },
   {
-    id: 3, name: 'Sophie Chen', role: 'Interior Designer',
+    id: 3, name: 'Trần Thị Bích', role: 'Nhà Thiết Kế Nội Thất',
     avatar: 'https://i.pravatar.cc/100?img=32',
-    stars: 5, date: 'March 2025',
-    text: `"The packaging, the branding, the taste — everything is premium. I ordered for my team and everyone absolutely loved it. The Tiger Brown Sugar is now our Friday tradition. Cannot recommend enough!"`,
+    stars: 5, date: 'Tháng 3/2025',
+    text: `"Bao bì, thương hiệu, hương vị — mọi thứ đều đẳng cấp. Tôi đặt cho cả nhóm và mọi người đều mê. Trà Đường Nâu Tiger giờ là truyền thống thứ Sáu của chúng tôi. Siêu phẩm!"`,
   },
   {
-    id: 4, name: 'James Pham', role: 'Fitness Coach',
+    id: 4, name: 'Phạm Đức Anh', role: 'Huấn Luyện Viên Thể Hình',
     avatar: 'https://i.pravatar.cc/100?img=8',
-    stars: 5, date: 'May 2025',
-    text: `"Even as a health-conscious person, I feel great drinking Green Tea. Knowing the ingredients are 100% organic makes all the difference. The Jasmine Milk Tea is light, refreshing and absolutely beautiful."`,
+    stars: 5, date: 'Tháng 5/2025',
+    text: `"Là người chú ý đến sức khỏe, tôi cảm thấy hoàn toàn thoải mái khi uống Green Tea. Biết nguyên liệu 100% hữu cơ tạo ra sự khác biệt lớn. Trà Sữa Hoa Nhài thanh mát và đẹp tuyệt vời."`,
   },
 ]
 
@@ -54,11 +54,11 @@ export default function Testimonials() {
         >
           <div className="inline-block px-4 py-1 rounded-full text-sm font-medium text-brand-primary mb-4"
             style={{ background: 'rgba(15,157,88,0.1)' }}>
-            Customer Love
+            Khách Hàng Nói Gì
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 section-title">
-            Real Stories,<br />
-            <span className="gradient-text">Real Flavors</span>
+            Câu Chuyện Thật,<br />
+            <span className="gradient-text">Hương Vị Thật</span>
           </h2>
         </motion.div>
 

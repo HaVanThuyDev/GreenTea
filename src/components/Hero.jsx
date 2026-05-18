@@ -28,13 +28,12 @@ export default function Hero() {
         }}
       />
 
-      {/* Dark overlay for text readability */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/20" />
 
-      {/* Floating leaves */}
       <FloatingLeaves />
 
-      {/* Decorative circles */}
+      {/* Decorative circle */}
       <motion.div
         animate={{ scale: [1, 1.15, 1], opacity: [0.15, 0.25, 0.15] }}
         transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
@@ -51,7 +50,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 text-sm font-medium text-green-200"
         >
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-          100% Organic · Farm to Cup
+          100% Hữu Cơ · Từ Vườn Đến Ly
         </motion.div>
 
         <motion.h1
@@ -60,9 +59,9 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight mb-6"
         >
-          Fresh Green Tea
+          Trà Xanh Tươi Ngon
           <br />
-          <span className="gradient-text-gold">Experience</span>
+          <span className="gradient-text-gold">Đỉnh Cao Hương Vị</span>
         </motion.h1>
 
         <motion.p
@@ -71,8 +70,8 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.7 }}
           className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Crafted from the finest organic tea leaves, our premium milk tea collection
-          brings nature's freshness to every sip. Taste the difference.
+          Được chế tác từ những lá trà hữu cơ cao cấp nhất, bộ sưu tập trà sữa của chúng tôi
+          mang đến hương vị thiên nhiên tươi mát trong từng ngụm. Hãy cảm nhận sự khác biệt.
         </motion.p>
 
         <motion.div
@@ -88,7 +87,7 @@ export default function Hero() {
             className="ripple-effect px-10 py-4 rounded-full font-bold text-lg text-gray-900"
             style={{ background: 'linear-gradient(135deg,#f5c842,#fde68a)' }}
           >
-            Order Now ✨
+            Đặt Ngay ✨
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -96,7 +95,7 @@ export default function Hero() {
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-outline text-white border-white/50"
           >
-            Our Story
+            Câu Chuyện Của Chúng Tôi
           </motion.button>
         </motion.div>
 
@@ -107,7 +106,12 @@ export default function Hero() {
           transition={{ delay: 1.1, duration: 0.7 }}
           className="flex flex-wrap justify-center gap-8 mt-20"
         >
-          {[['10K+','Happy Customers'],['50+','Unique Flavors'],['100%','Organic Leaves'],['5★','Rating']].map(([num, label]) => (
+          {[
+            ['10K+', 'Khách Hàng Hài Lòng'],
+            ['50+', 'Hương Vị Độc Đáo'],
+            ['100%', 'Nguyên Liệu Hữu Cơ'],
+            ['5★', 'Đánh Giá'],
+          ].map(([num, label]) => (
             <div key={label} className="text-center">
               <div className="text-3xl font-black text-white">{num}</div>
               <div className="text-sm text-white/60 mt-1">{label}</div>

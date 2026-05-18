@@ -2,7 +2,14 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ShoppingCart, X, Menu, Leaf } from 'lucide-react'
 
-const links = ['Home','About','Menu','Features','Reviews','Order']
+const links = [
+  { label: 'Trang Chủ', id: 'home' },
+  { label: 'Về Chúng Tôi', id: 'about' },
+  { label: 'Thực Đơn', id: 'menu' },
+  { label: 'Đặc Điểm', id: 'features' },
+  { label: 'Đánh Giá', id: 'reviews' },
+  { label: 'Đặt Hàng', id: 'order' },
+]
 
 export default function Navbar({ cartCount, onCartOpen }) {
   const [scrolled, setScrolled] = useState(false)
@@ -15,7 +22,7 @@ export default function Navbar({ cartCount, onCartOpen }) {
   }, [])
 
   const scrollTo = (id) => {
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
     setMenuOpen(false)
   }
 
@@ -46,8 +53,8 @@ export default function Navbar({ cartCount, onCartOpen }) {
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <button key={l} onClick={() => scrollTo(l)} className="nav-link text-white/80 hover:text-white">
-              {l}
+            <button key={l.id} onClick={() => scrollTo(l.id)} className="nav-link text-white/80 hover:text-white">
+              {l.label}
             </button>
           ))}
         </div>
@@ -86,8 +93,8 @@ export default function Navbar({ cartCount, onCartOpen }) {
           >
             <div className="flex flex-col px-6 pb-6 pt-2 gap-4">
               {links.map((l) => (
-                <button key={l} onClick={() => scrollTo(l)} className="text-white/80 hover:text-white text-left py-2 border-b border-white/10">
-                  {l}
+                <button key={l.id} onClick={() => scrollTo(l.id)} className="text-white/80 hover:text-white text-left py-2 border-b border-white/10">
+                  {l.label}
                 </button>
               ))}
             </div>

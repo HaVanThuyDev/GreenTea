@@ -4,38 +4,38 @@ import { Leaf, Zap, Shield, Truck, Droplets, Award } from 'lucide-react'
 const features = [
   {
     icon: <Leaf className="w-7 h-7 text-white" />,
-    title: 'Organic Tea Leaves',
-    desc: "Sourced exclusively from certified organic farms with zero pesticides, preserving nature's purity in every sip.",
+    title: 'Lá Trà Hữu Cơ',
+    desc: 'Được thu hái từ các trang trại hữu cơ được chứng nhận, không thuốc trừ sâu, giữ trọn sự tinh khiết của thiên nhiên trong từng ngụm.',
     delay: 0.1,
   },
   {
     icon: <Droplets className="w-7 h-7 text-white" />,
-    title: 'Fresh Ingredients',
-    desc: 'We use only farm-fresh dairy, seasonal fruits, and artisan syrups — no artificial flavors, ever.',
+    title: 'Nguyên Liệu Tươi Sạch',
+    desc: 'Chúng tôi chỉ dùng sữa tươi, trái cây theo mùa và siro thủ công — không hương liệu nhân tạo, không phẩm màu.',
     delay: 0.2,
   },
   {
     icon: <Zap className="w-7 h-7 text-white" />,
-    title: 'Fast Delivery',
-    desc: 'Your order reaches you within 30 minutes, guaranteed fresh and piping cold — every single time.',
+    title: 'Giao Hàng Nhanh',
+    desc: 'Đơn hàng của bạn đến trong vòng 30 phút, đảm bảo tươi ngon và mát lạnh — mỗi lần đều như vậy.',
     delay: 0.3,
   },
   {
     icon: <Shield className="w-7 h-7 text-white" />,
-    title: 'Quality Certified',
-    desc: 'USDA Organic and ISO certified production ensuring the highest standards of food safety and quality.',
+    title: 'Chứng Nhận Chất Lượng',
+    desc: 'Đạt chứng nhận hữu cơ USDA và tiêu chuẩn ISO, đảm bảo an toàn thực phẩm và chất lượng cao nhất.',
     delay: 0.4,
   },
   {
     icon: <Award className="w-7 h-7 text-white" />,
-    title: 'Award Winning',
-    desc: 'Recognized as the #1 premium milk tea brand by Asia Food Awards 2024 and 2025.',
+    title: 'Giải Thưởng Uy Tín',
+    desc: 'Được vinh danh là thương hiệu trà sữa cao cấp số 1 tại Giải Thưởng Ẩm Thực Châu Á 2024 và 2025.',
     delay: 0.5,
   },
   {
     icon: <Truck className="w-7 h-7 text-white" />,
-    title: 'Eco Packaging',
-    desc: '100% biodegradable cups and straws — because we care for the planet as much as we care for our tea.',
+    title: 'Bao Bì Thân Thiện',
+    desc: '100% ly và ống hút phân hủy sinh học — vì chúng tôi yêu thiên nhiên không kém gì yêu trà.',
     delay: 0.6,
   },
 ]
@@ -59,14 +59,14 @@ export default function Features() {
         >
           <div className="inline-block px-4 py-1 rounded-full text-sm font-medium text-brand-primary mb-4"
             style={{ background: 'rgba(15,157,88,0.1)' }}>
-            Why Choose Us
+            Tại Sao Chọn Chúng Tôi
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 section-title">
-            The Green Tea
-            <br /><span className="gradient-text">Difference</span>
+            Điều Làm Nên
+            <br /><span className="gradient-text">Sự Khác Biệt Green Tea</span>
           </h2>
           <p className="text-gray-500 mt-6 max-w-xl mx-auto">
-            We don't just make drinks — we craft experiences that nourish your body and soul.
+            Chúng tôi không chỉ pha trà — chúng tôi tạo ra những trải nghiệm nuôi dưỡng cơ thể và tâm hồn bạn.
           </p>
         </motion.div>
 

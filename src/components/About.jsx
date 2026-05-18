@@ -3,9 +3,9 @@ import { motion, useInView } from 'framer-motion'
 import { Leaf, Award, Heart } from 'lucide-react'
 
 const badges = [
-  { icon: <Leaf className="w-4 h-4" />, label: 'Organic' },
-  { icon: <Award className="w-4 h-4" />, label: 'Award Winning' },
-  { icon: <Heart className="w-4 h-4" />, label: 'Loved by Thousands' },
+  { icon: <Leaf className="w-4 h-4" />, label: 'Hữu Cơ' },
+  { icon: <Award className="w-4 h-4" />, label: 'Đạt Giải Thưởng' },
+  { icon: <Heart className="w-4 h-4" />, label: 'Hàng Ngàn Yêu Thích' },
 ]
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
           className="relative"
         >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-            <img src="/about_img.png" alt="Artisan tea brewing" className="w-full h-[500px] object-cover" />
+            <img src="/about_img.png" alt="Nghệ thuật pha trà" className="w-full h-[500px] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           </div>
           {/* Floating glass card */}
@@ -40,7 +40,7 @@ export default function About() {
             className="absolute -bottom-6 -right-6 glass-dark rounded-2xl p-5 shadow-xl"
           >
             <div className="text-3xl font-black text-white">5+</div>
-            <div className="text-green-300 text-sm">Years of Excellence</div>
+            <div className="text-green-300 text-sm">Năm Xuất Sắc</div>
             <div className="flex gap-1 mt-2">
               {'★★★★★'.split('').map((s, i) => <span key={i} className="text-yellow-400 text-xs">{s}</span>)}
             </div>
@@ -58,20 +58,21 @@ export default function About() {
         >
           <div className="inline-block px-4 py-1 rounded-full text-sm font-medium text-brand-primary mb-4"
             style={{ background: 'rgba(15,157,88,0.1)' }}>
-            Our Story
+            Câu Chuyện Của Chúng Tôi
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6 section-title text-left">
-            Rooted in Nature,<br />
-            <span className="gradient-text">Brewed with Love</span>
+            Bắt Nguồn Từ Thiên Nhiên,<br />
+            <span className="gradient-text">Pha Chế Bằng Tình Yêu</span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-            Born from a deep love of authentic green tea culture, Green Tea was founded to bring the 
-            pure essence of nature's finest leaves to every cup. We source premium organic tea directly 
-            from sustainable farms, ensuring every sip tells a story of craftsmanship and care.
+            Xuất phát từ tình yêu sâu sắc với văn hóa trà xanh thuần túy, Green Tea được thành lập
+            để mang tinh hoa thiên nhiên từ những lá trà tốt nhất vào từng ly. Chúng tôi thu mua
+            trà hữu cơ cao cấp trực tiếp từ các trang trại bền vững, đảm bảo mỗi ngụm kể một câu
+            chuyện về nghệ thuật và tâm huyết.
           </p>
           <p className="text-gray-500 leading-relaxed mb-8">
-            From the misty mountains of Asia to your hands — we believe great tea changes how you feel. 
-            Each blend is a masterwork of balance, freshness, and unforgettable taste.
+            Từ những đỉnh núi mờ sương của châu Á đến tay bạn — chúng tôi tin rằng trà ngon thay đổi
+            cảm xúc của bạn. Mỗi hương vị là kiệt tác của sự cân bằng, tươi mát và vị ngon khó quên.
           </p>
 
           {/* Badges */}
@@ -91,7 +92,7 @@ export default function About() {
             onClick={() => document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-primary ripple-effect"
           >
-            Explore Our Menu
+            Khám Phá Thực Đơn
           </motion.button>
         </motion.div>
       </div>

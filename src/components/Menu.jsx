@@ -4,27 +4,27 @@ import { ShoppingCart, Star, Plus } from 'lucide-react'
 
 export const products = [
   {
-    id: 1, name: 'Matcha Latte Supreme', price: 5.90, rating: 4.9, reviews: 284,
-    tag: 'Bestseller', tagColor: '#0f9d58',
-    desc: 'Velvety ceremonial-grade matcha blended with organic oat milk.',
+    id: 1, name: 'Matcha Latte Thượng Hạng', price: 5.90, rating: 4.9, reviews: 284,
+    tag: 'Bán Chạy', tagColor: '#0f9d58',
+    desc: 'Matcha hạng cao được pha với sữa yến mạch hữu cơ, mịn màng và đậm đà.',
     img: '/matcha_latte.png',
   },
   {
-    id: 2, name: 'Taro Dream Boba', price: 5.50, rating: 4.8, reviews: 196,
-    tag: 'Fan Favorite', tagColor: '#8b5cf6',
-    desc: 'Creamy taro with chewy tapioca pearls and a hint of green tea.',
+    id: 2, name: 'Trà Sữa Khoai Môn Boba', price: 5.50, rating: 4.8, reviews: 196,
+    tag: 'Yêu Thích', tagColor: '#8b5cf6',
+    desc: 'Khoai môn béo mịn với trân châu dai ngon và hương trà xanh nhẹ nhàng.',
     img: '/taro_milk_tea.png',
   },
   {
-    id: 3, name: 'Jasmine Milk Tea', price: 5.20, rating: 4.7, reviews: 153,
-    tag: 'Floral', tagColor: '#ec4899',
-    desc: 'Delicate jasmine blossoms steeped in fresh green tea with silky milk.',
+    id: 3, name: 'Trà Sữa Hoa Nhài', price: 5.20, rating: 4.7, reviews: 153,
+    tag: 'Thanh Hoa', tagColor: '#ec4899',
+    desc: 'Hương hoa nhài tinh tế ướp trong trà xanh tươi, pha cùng sữa mịn màng.',
     img: '/jasmine_milk_tea.png',
   },
   {
-    id: 4, name: 'Tiger Brown Sugar', price: 6.20, rating: 4.9, reviews: 311,
-    tag: 'New', tagColor: '#f59e0b',
-    desc: 'Bold brown sugar swirl over fresh green tea with caramel tapioca.',
+    id: 4, name: 'Trà Đường Nâu Tiger', price: 6.20, rating: 4.9, reviews: 311,
+    tag: 'Mới', tagColor: '#f59e0b',
+    desc: 'Đường nâu caramel quyện cùng trà xanh tươi và trân châu caramel thơm ngon.',
     img: '/brown_sugar_tea.png',
   },
 ]
@@ -70,8 +70,8 @@ function ProductCard({ product, onAdd }) {
         <p className="text-gray-500 text-sm mb-4 leading-relaxed">{product.desc}</p>
         <div className="flex items-center justify-between">
           <div>
-            <span className="text-2xl font-black text-brand-primary">${product.price.toFixed(2)}</span>
-            <span className="text-xs text-gray-400 ml-2">({product.reviews} reviews)</span>
+            <span className="text-2xl font-black text-brand-primary">{(product.price * 25000).toLocaleString('vi-VN')}₫</span>
+            <span className="text-xs text-gray-400 ml-2">({product.reviews} đánh giá)</span>
           </div>
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -79,13 +79,11 @@ function ProductCard({ product, onAdd }) {
             onClick={handleAdd}
             className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-white transition-all duration-300"
             style={{
-              background: added
-                ? 'linear-gradient(135deg,#0f9d58,#34c759)'
-                : 'linear-gradient(135deg,#0f9d58,#34c759)',
+              background: 'linear-gradient(135deg,#0f9d58,#34c759)',
               boxShadow: added ? '0 0 20px rgba(52,199,89,0.5)' : 'none',
             }}
           >
-            {added ? '✓ Added' : <><Plus className="w-4 h-4" /> Add</>}
+            {added ? '✓ Đã Thêm' : <><Plus className="w-4 h-4" /> Thêm</>}
           </motion.button>
         </div>
       </div>
@@ -107,15 +105,15 @@ export default function Menu({ onAddToCart }) {
         >
           <div className="inline-block px-4 py-1 rounded-full text-sm font-medium text-brand-primary mb-4"
             style={{ background: 'rgba(15,157,88,0.1)' }}>
-            Our Menu
+            Thực Đơn Của Chúng Tôi
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 section-title">
-            Sip Into Something
-            <br /><span className="gradient-text">Extraordinary</span>
+            Thưởng Thức Điều Gì Đó
+            <br /><span className="gradient-text">Thật Đặc Biệt</span>
           </h2>
           <p className="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
-            Every drink is handcrafted with love using premium organic ingredients 
-            sourced from the world's finest tea gardens.
+            Mỗi thức uống được pha chế thủ công với tình yêu từ những nguyên liệu hữu cơ cao cấp,
+            tuyển chọn từ những vườn trà tốt nhất thế giới.
           </p>
         </motion.div>
 
